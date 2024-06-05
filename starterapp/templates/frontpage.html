@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h1>My Diary</h1>
+    <form method="post" action="{% url 'diary' %}">
+        {% csrf_token %}
+        <textarea name="diary" rows="5" cols="50" placeholder="Write your diary here..."></textarea><br>
+        <button type="submit">Create</button>
+    </form>
+</body>
+</html>

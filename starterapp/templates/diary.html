@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Diary</title>
+</head>
+<body>
+    <h1>Your Diary</h1>
+    {% if diary %}
+        <p>{{ diary }}</p>
+    {% else %}
+        <p>No diary content. Did you write anything?</p>
+    {% endif %}
+    <a href="{% url 'frontpage' %}">Back to Home</a>
+</body>
+</html>
